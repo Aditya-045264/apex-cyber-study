@@ -77,17 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "force": "Force is a push or pull. Formula: F = ma.",
         "gravity": "Gravity attracts mass. On Earth: 9.8 m/s².",
         "pythagoras": "a² + b² = c² in a right-angled triangle.",
-    "variable": "A letter or symbol representing an unknown value, such as x or y.",
-    "expression": "A combination of numbers, variables, and operators (like 2x + 5) without an equals sign.",
-    "equation": "A mathematical statement that two expressions are equal, indicated by an '=' sign.",
-    "inequality": "A statement showing that two values are not necessarily equal, using symbols like <, >, ≤, or ≥.",
-    "linear_equation": "An equation that graphs as a straight line, typically in the form y = mx + b.",
-    "slope": "The measure of the steepness and direction of a line, often represented by 'm' in y = mx + b.",
-    "quadratic_equation": "An equation in the form ax² + bx + c = 0, where the graph is a parabola.",
-    "polynomial": "An expression consisting of variables and coefficients, involving only addition, subtraction, and multiplication.",
-    "factoring": "The process of breaking down an expression into a product of simpler factors.",
-    "default": "Algebra is the branch of math where letters represent numbers. Ask me about variables, equations, or polynomials!"
-  };
+        "default": "I'm a study assistant! Ask me about physics or math topics."
+    };
 
     if (submitQueryBtn) {
         submitQueryBtn.addEventListener('click', () => {
