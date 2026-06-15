@@ -172,7 +172,35 @@ document.addEventListener('DOMContentLoaded', () => {
     "stock": "A share in the ownership of a company.",
     "interest": "Money paid regularly at a particular rate for the use of money lent.",
 
-    "default": "I have a massive database! Ask me about Science, Space, History, Tech, or Finance."
+
+
+
+// Add these to your knowledgeBase object:
+
+// --- LAW & GOVERNANCE ---
+"constitution": "The supreme law of a land, defining the structure of government.",
+"contract": "A legally binding agreement between two or more parties.",
+"patent": "A government license giving a right to exclude others from making an invention.",
+"law": "The system of rules which a particular country or community recognizes as regulating the actions of its members.",
+
+// --- ADVANCED ANATOMY ---
+"heart": "A muscular organ that pumps blood through the circulatory system.",
+"brain": "An organ of soft nervous tissue that acts as the control center of the body.",
+"liver": "A large organ that produces bile and detoxifies chemicals.",
+"kidney": "An organ that filters blood and excretes waste as urine.",
+
+// --- PSYCHOLOGY & BEHAVIOR ---
+"cognitive": "Relating to the mental action or process of acquiring knowledge and understanding.",
+"subconscious": "Part of the mind of which one is not fully aware but which influences one's actions.",
+"motivation": "The reason or reasons one has for acting or behaving in a particular way.",
+"anxiety": "A feeling of worry, nervousness, or unease, typically about an imminent event.",
+
+// --- ADVANCED PHYSICS ---
+"thermodynamics": "The branch of physical science that deals with the relations between heat and other forms of energy.",
+"superconductor": "A material that can conduct electricity with zero resistance.",
+"photon": "A particle representing a quantum of light or other electromagnetic radiation.",
+"isomorphism": "A mapping between two structures that preserves their properties.",
+   "default": "I have a massive database! Ask me about Science, Space, History, Tech, or Finance."
 };
  
     if (submitQueryBtn) {
