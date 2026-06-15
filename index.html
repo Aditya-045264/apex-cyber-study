@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,82 +74,4 @@
 
     <script src="script.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Cyber Study Hub & Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="dashboard-container">
-
-        <div class="panel sidebar-panel">
-            <div class="live-clock">
-                <div id="clockDisplay">00:00:00 AM</div>
-                <div id="dateDisplay">Loading Date...</div>
-            </div>
-
-            <div class="timer-box">
-                <h3>Focus Timer</h3>
-                <div id="timerDisplay">25:00</div>
-                
-                <div style="margin-bottom: 12px;">
-                    <input type="number" id="customMinutes" value="25" min="1" max="180" style="width: 60px; text-align: center;">
-                    <span style="color: #94a3b8; font-size: 14px;">Mins</span>
-                </div>
-
-                <button id="timerBtn">Start Session</button>
-            </div>
-
-            <div class="stats-box">
-                <div class="stat-item">Tasks Left: <span id="taskCount">0</span></div>
-                <div class="stat-item">Open Queries: <span id="queryCount">0</span></div>
-            </div>
-        </div>
-
-        <div class="panel main-panel">
-            <h2>Study Planner</h2>
-            <p class="subtitle">Organize and execute your academic targets.</p>
-
-            <div class="input-group">
-                <input type="text" id="taskInput" placeholder="Add a new assignment...">
-                <select id="prioritySelect">
-                    <option value="High">High</option>
-                    <option value="Medium" selected>Medium</option>
-                    <option value="Low">Low</option>
-                </select>
-                <button id="addBtn">Add</button>
-            </div>
-            
-            <ul id="taskList"></ul>
-            <button id="clearTasksBtn" class="danger-btn" style="border: 1px solid #ff3333; color: #ff3333; background: transparent; padding: 8px; border-radius: 5px; cursor: pointer; width: 100%; margin-top: 10px;">Clear Completed Tasks</button>
-        </div>
-
-        <div class="panel right-panel">
-            <div class="queries-section">
-                <h2>Queries Board</h2>
-                <div class="query-form">
-                    <input type="text" id="querySubject" placeholder="Subject (e.g., IT, Physics)">
-                    <textarea id="queryText" placeholder="Describe your doubt..."></textarea>
-                    <button id="submitQueryBtn">Log Query</button>
-                </div>
-                
-                <div id="queriesDisplayList"></div>
-            </div>
-
-            <div class="scratchpad-section" style="margin-top: 20px;">
-                <h3>Quick Scratchpad</h3>
-                <textarea placeholder="Type temporary ideas, links, or formulas here..." style="width: 100%; height: 100px; background: #1e2235; border: 1px solid #3b4260; color: #fff; border-radius: 5px; padding: 8px; resize: none;"></textarea>
-            </div>
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-</body>
->>>>>>> 930b369c4c56a342cd7514013c23fa7a2a993a64
 </html>
