@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: radial-gradient(circle, #1e1b4b 0%, #0f0b29 100%);
     font-family: 'Segoe UI', Roboto, sans-serif;
@@ -186,4 +187,194 @@ li { background: #1e293b; padding: 14px; border-radius: 8px; margin-bottom: 10px
 @media (max-width: 950px) {
     .dashboard-container { flex-direction: column; }
     .sidebar-panel, .right-panel { width: 100%; border-right: none; }
+=======
+body {
+    background: radial-gradient(circle, #1e1b4b 0%, #0f0b29 100%);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    background-color: rgba(15, 23, 42, 0.95);
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1250px;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.panel { padding: 30px; box-sizing: border-box; }
+.subtitle { color: #94a3b8; font-size: 14px; margin-top: -5px; margin-bottom: 20px; }
+
+/* ==================== PANEL 1: SIDEBAR ==================== */
+.sidebar-panel {
+    background-color: #0b0f19;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-right: 1px solid #1e293b;
+}
+
+.live-clock { text-align: center; background: #111827; padding: 15px; border-radius: 12px; border: 1px solid #1e293b; }
+#clockDisplay { font-size: 24px; font-weight: bold; color: #a855f7; font-family: monospace; }
+#dateDisplay { font-size: 12px; color: #64748b; margin-top: 5px; }
+
+.timer-box { background: #111827; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #1e293b; }
+.timer-box h3 { margin: 0 0 10px 0; color: #94a3b8; font-size: 14px; }
+#timerDisplay { font-size: 38px; font-weight: bold; color: #06b6d4; font-family: monospace; margin-bottom: 15px; }
+
+#timerBtn { background-color: #10b981; color: white; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.2s; }
+#timerBtn:hover { background-color: #059669; }
+
+/* Flashing unlock reward style */
+.game-reward-btn {
+    background: linear-gradient(90deg, #d946ef, #8b5cf6);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #d946ef; }
+    50% { box-shadow: 0 0 20px #8b5cf6; }
+    100% { box-shadow: 0 0 5px #d946ef; }
+}
+
+.stats-box { display: flex; flex-direction: column; gap: 12px; }
+.stat-item { background: #111827; padding: 12px; border-radius: 8px; color: #cbd5e1; font-size: 15px; font-weight: 500; }
+.stat-item span { float: right; font-weight: bold; color: #3b82f6; }
+
+/* ==================== PANEL 2: PLANNER ==================== */
+.main-panel { flex: 1; border-right: 1px solid #1e293b; }
+.main-panel h2 { color: white; margin: 0; }
+.input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+
+input, select, textarea { background-color: #1e293b; border: 1px solid #334155; color: white; padding: 12px; border-radius: 8px; font-size: 14px; outline: none; }
+input:focus, select:focus, textarea:focus { border-color: #3b82f6; }
+.input-group input { flex: 1; }
+
+#addBtn { background-color: #3b82f6; color: white; border: none; padding: 0 20px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+#taskList { list-style: none; padding: 0; max-height: 350px; overflow-y: auto; }
+
+li { background: #1e293b; padding: 14px; border-radius: 8px; margin-bottom: 10px; color: #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+.tag { font-size: 11px; font-weight: bold; padding: 3px 8px; border-radius: 4px; margin-left: 10px; text-transform: uppercase; }
+.tag-High { background-color: #ef4444; color: white; }
+.tag-Medium { background-color: #f59e0b; color: white; }
+.tag-Low { background-color: #10b981; color: white; }
+
+.delete-action { color: #64748b; cursor: pointer; }
+.delete-action:hover { color: #ef4444; }
+
+.danger-btn { background: none; border: 1px solid #ef4444; color: #ef4444; padding: 10px; border-radius: 8px; cursor: pointer; width: 100%; margin-top: 15px; }
+.danger-btn:hover { background: #ef4444; color: white; }
+
+/* ==================== PANEL 3: RIGHT PANEL ==================== */
+.right-panel { width: 350px; display: flex; flex-direction: column; gap: 25px; }
+.right-panel h2 { color: white; margin: 0 0 15px 0; font-size: 18px; }
+.query-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+.query-form textarea { height: 60px; resize: none; }
+
+#submitQueryBtn { background-color: #a855f7; color: white; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+#queriesDisplayList { max-height: 200px; overflow-y: auto; }
+
+.query-card { background: #111827; border: 1px solid #8b5cf6; padding: 12px; border-radius: 8px; margin-bottom: 10px; position: relative; }
+.query-card h4 { margin: 0 0 5px 0; color: #c084fc; font-size: 13px; }
+.query-card p { margin: 0; color: #94a3b8; font-size: 13px; }
+.notes-section textarea { width: 100%; height: 120px; resize: none; box-sizing: border-box; font-family: monospace; background-color: #0b0f19; }
+
+/* ==================== LEVEL 4: THE GAME POPUP WINDOW STYLING ==================== */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(15, 23, 42, 0.85);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 999;
+    visibility: hidden; /* Changes via JS script */
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Activated class toggled via javascript */
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.game-box {
+    background: #0f172a;
+    border: 3px solid #d946ef;
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 0 35px rgba(217, 70, 239, 0.4);
+}
+
+.close-x {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 12px; color: #94a3b8;
+    cursor: pointer;
+    border: 1px solid #334155;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.close-x:hover { color: #ef4444; border-color: #ef4444; }
+
+.game-stats {
+    display: flex; justify-content: space-around;
+    font-size: 20px; font-weight: bold;
+    margin: 20px 0; color: #38bdf8;
+    font-family: monospace;
+}
+
+.arena-zone {
+    background: #020617;
+    height: 250px;
+    border-radius: 12px;
+    border: 1px dashed #475569;
+    position: relative;
+    overflow: hidden;
+    display: flex; justify-content: center; align-items: center;
+}
+
+#startGameInnerBtn {
+    background-color: #a855f7; color: white; border: none;
+    padding: 12px 24px; border-radius: 8px;
+    font-size: 16px; font-weight: bold; cursor: pointer;
+}
+
+.glowing-orb {
+    width: 40px; height: 40px;
+    background: radial-gradient(circle, #f472b6 0%, #d946ef 100%);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 20px #d946ef, 0 0 40px #f472b6;
+}
+
+@media (max-width: 950px) {
+    .dashboard-container { flex-direction: column; }
+    .sidebar-panel, .right-panel { width: 100%; border-right: none; }
+>>>>>>> 930b369c4c56a342cd7514013c23fa7a2a993a64
 }
