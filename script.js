@@ -86,10 +86,95 @@ document.addEventListener('DOMContentLoaded', () => {
     "quadratic_equation": "An equation in the form ax² + bx + c = 0, where the graph is a parabola.",
     "polynomial": "An expression consisting of variables and coefficients, involving only addition, subtraction, and multiplication.",
     "factoring": "The process of breaking down an expression into a product of simpler factors.",
+    // --- SCIENCE & MATH ---
+    "polynomial": "An expression consisting of variables and coefficients.",
+    "factoring": "Breaking an expression into simpler product factors.",
+    "dna": "The hereditary material in humans and almost all other organisms.",
+    "gravity": "The force that attracts a body toward the center of the earth.",
+    "atom": "The basic unit of a chemical element.",
+    "molecule": "A group of atoms bonded together.",
+    "quantum": "The minimum amount of any physical entity involved in an interaction.",
+    "relativity": "Einstein's theory that space and time are linked for objects moving at a constant speed.",
+    "entropy": "A measure of disorder or randomness in a system.",
+    "calculus": "The mathematical study of continuous change.",
+    "geometry": "Study of shapes, sizes, and properties of space.",
+    "prime": "A number greater than 1 with no divisors other than 1 and itself.",
+    "velocity": "The speed of an object in a given direction.",
+    "inertia": "The tendency of an object to resist changes in its state of motion.",
+    "friction": "The resistance that one surface or object encounters when moving over another.",
 
-        "default": "I'm a study assistant! Ask me about physics or math topics."
-    };
+    // --- CHEMISTRY & ELEMENTS ---
+    "element": "A substance consisting of atoms with the same number of protons.",
+    "periodic table": "A tabular display of all known chemical elements.",
+    "acid": "A substance with a pH less than 7.",
+    "base": "A substance with a pH greater than 7.",
+    "catalyst": "A substance that increases the rate of a chemical reaction.",
+    "covalent": "A chemical bond that involves the sharing of electron pairs.",
+    "ionic": "A chemical bond formed through electrostatic attraction.",
+    "hydrogen": "The chemical element with the symbol H and atomic number 1.",
+    "oxygen": "A highly reactive nonmetal and an oxidizing agent.",
+    "carbon": "A versatile element that forms the basis of all known life.",
 
+    // --- GEOGRAPHY & SPACE ---
+    "mars": "The fourth planet, often called the Red Planet.",
+    "jupiter": "The largest planet in our solar system, a gas giant.",
+    "sun": "The star at the center of our solar system.",
+    "moon": "Earth's only natural satellite.",
+    "everest": "The highest mountain on Earth, located in the Himalayas.",
+    "amazon": "The largest tropical rainforest in the world.",
+    "pacific": "The largest and deepest of Earth's oceanic divisions.",
+    "sahara": "The largest hot desert in the world.",
+    "black hole": "A region where gravity is so strong that nothing can escape.",
+    "nebula": "A giant cloud of dust and gas in space.",
+    "galaxy": "A massive system of stars, stellar remnants, gas, and dust.",
+    "orbit": "The curved path of a celestial object around a star, planet, or moon.",
+
+    // --- HISTORY, CULTURE & MYTHOLOGY ---
+    "zeus": "The king of the gods in Greek mythology.",
+    "odin": "The chief god of Norse mythology, ruler of Asgard.",
+    "pyramid": "Ancient monumental structures, most famously in Egypt.",
+    "rome": "The heart of the ancient Roman Empire.",
+    "samurai": "Military nobility and officer caste of medieval Japan.",
+    "viking": "Seafaring warriors from the Scandinavian regions.",
+    "renaissance": "A period of European cultural and artistic rebirth.",
+    "democracy": "A system of government by the whole population.",
+    "shogun": "A hereditary commander-in-chief in feudal Japan.",
+    "history": "The study of past events, particularly in human affairs.",
+    "mythology": "A collection of myths, especially one belonging to a particular religious or cultural tradition.",
+
+    // --- TECHNOLOGY & COMPUTING ---
+    "javascript": "A programming language used for interactive web effects.",
+    "html": "The standard markup language for documents in a web browser.",
+    "css": "The language used to style the look and feel of a website.",
+    "ai": "Simulation of human intelligence by computer systems.",
+    "blockchain": "A shared, immutable ledger for recording transactions.",
+    "cloud": "Computing services delivered over the internet.",
+    "binary": "A base-2 number system using only 0s and 1s.",
+    "algorithm": "A process or set of rules to be followed in calculations.",
+    "compiler": "A program that translates code into machine language.",
+    "database": "An organized collection of structured information.",
+    "server": "A computer or system that provides resources to other computers.",
+    "network": "A set of computers connected to each other for sharing resources.",
+
+    // --- LITERATURE & PHILOSOPHY ---
+    "stoicism": "A school of thought teaching self-control.",
+    "ethics": "Moral principles that govern behavior.",
+    "logic": "Reasoning according to strict principles.",
+    "shakespeare": "English playwright, widely regarded as the greatest writer.",
+    "homer": "Ancient Greek author of the Iliad and the Odyssey.",
+    "existentialism": "A philosophical theory that emphasizes the existence of the individual.",
+
+    // --- FINANCE & ECONOMY ---
+    "inflation": "A general increase in prices and fall in purchasing power.",
+    "capital": "Wealth in the form of money or assets.",
+    "monopoly": "Exclusive control of the supply or trade in a commodity.",
+    "startup": "A newly established business venture.",
+    "stock": "A share in the ownership of a company.",
+    "interest": "Money paid regularly at a particular rate for the use of money lent.",
+
+    "default": "I have a massive database! Ask me about Science, Space, History, Tech, or Finance."
+};
+ 
     if (submitQueryBtn) {
         submitQueryBtn.addEventListener('click', () => {
             const question = queryText.value.trim();
